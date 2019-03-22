@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/03/2019 10:57:41 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Formulario" table="FORMULARIO" schema="renovacao" optimistic-lock="version">
+        <id name="idcpf" type="int">
+            <column name="IDCPF" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="nome" type="string">
+            <column name="NOME" length="50" />
+        </property>
+        <property name="rua" type="string">
+            <column name="RUA" length="50" />
+        </property>
+        <property name="numero" type="int">
+            <column name="NUMERO" length="50" />
+        </property>
+        <property name="bairro" type="string">
+            <column name="BAIRRO" length="50" />
+        </property>
+        <property name="cidade" type="string">
+            <column name="CIDADE" length="50" />
+        </property>
+        <property name="cep" type="int">
+            <column name="CEP" length="50" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="100" />
+        </property>
+        <property name="telefone" type="string">
+            <column name="TELEFONE" length="20" />
+        </property>
+        <property name="go" type="string">
+            <column name="go" length="11" />
+        </property>
+    </class>
+</hibernate-mapping>
