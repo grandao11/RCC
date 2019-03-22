@@ -3,9 +3,9 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated 21/03/2019 10:57:41 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="pojo.Formulario" table="FORMULARIO" schema="renovacao" optimistic-lock="version">
+    <class name="pojo.Formulario" table="FORMULARIO" schema="RCC" optimistic-lock="version">
         <id name="idcpf" type="int">
-            <column name="IDCPF" length="50" />
+            <column name="IDCPF" precision="6" scale="0" />
             <generator class="assigned" />
         </id>
         <property name="nome" type="string">

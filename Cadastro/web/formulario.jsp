@@ -38,6 +38,6 @@
              }
             %>
         
-        <a href="formulario.jsp">Novo</a>
+        <a href="formulario.jsp?id=0">Novo</a>
     </body>
 </html>
